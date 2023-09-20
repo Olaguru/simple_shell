@@ -35,7 +35,6 @@ void analyze(char **args, general_t *info, char *buffer)
 		error(info);
 		return;
 	}
-
 	if (update == 1)
 	{
 		execute(cmd, args, info, buffer);
@@ -43,7 +42,6 @@ void analyze(char **args, general_t *info, char *buffer)
 	}
 	if (current_directory(cmd, args, buffer, info) == 1)
 		return;
-
 	info->value_path = which(cmd, info);
 	if (info->value_path != NULL)
 	{
@@ -51,7 +49,6 @@ void analyze(char **args, general_t *info, char *buffer)
 		free_memory_p((void *) info->value_path);
 		return;
 	}
-
 	info->status_code = 127;
 	info->error_code = 132;
 	error(info);

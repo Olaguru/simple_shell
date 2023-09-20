@@ -17,7 +17,7 @@ char *to_string(int number)
 	total_digits = digits(number);
 	num = malloc(total_digits * sizeof(char) + 1);
 	if (num == NULL)
-		return NULL;
+		return (NULL);
 	if (number == 0)
 	{
 		num[0] = '0';
