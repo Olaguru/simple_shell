@@ -1,7 +1,7 @@
 #include "function.h"
 #include "shelldata.h"
 /**
- * _atoi - converts a string to an integer.
+ * _atoi - This function converts a string to an integer.
  * @s: input string.
  * Return: integer.
  */
